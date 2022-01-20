@@ -2,25 +2,9 @@ const express = require('express');
 const port = 8000;
 const path = require('path');
 const router = require('./routers');
+const db = require('./config/mongoose');
 const app = express();
 
-var schema = [
-    {
-        "desc" : "Have to Complete Project",
-        "cate" : "Personal",
-        "date" : "12/05/2006"
-    },
-    {
-        "desc" : "Have to solve DP Question",
-        "cate" : "Work",
-        "date" : "12/05/2006"
-    },
-    {
-        "desc" : "Have to complete new lecture",
-        "cate" : "Home",
-        "date" : "12/05/2006"
-    }
-];
 
 app.use(express.static('assets'));
 app.set('view engine','ejs');
