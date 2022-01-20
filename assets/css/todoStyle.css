@@ -137,17 +137,17 @@ ul{
 }
 
 .task-category div{
-	width: 40%;
-	height: 70%;
-	background-color: purple;
+	width: 35%;
+	height: 60%;
+	background: linear-gradient(#dc3545,black);
 	text-align: center;
 }
 
 .task-category div p{
 	color: white;
 	text-align: center;
-	font-size: 1.4rem;
-	line-height: 50px;
+	font-size: 1.3rem;
+	line-height: 45px;
 }
 
 .task-desc{
@@ -166,5 +166,13 @@ ul{
 	font-family: monospace;
 }
 
+input[type="checkbox"]{
+	display: inline-block;
+}
 
+.delete-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 

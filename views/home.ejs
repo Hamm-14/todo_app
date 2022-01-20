@@ -49,13 +49,13 @@
 			<ul class="list-group">
                 <% for(i of schema_list) { %>
                 <li class="item-style">
-                    <div class="delete-button"><input type="radio" name="task-id" value="<%= i._id %>" ></div>
+                    <div class="delete-button"><input class="form-check-input" type="checkbox" name="task-id" value="<%= i._id %>" ></div>
                     <div class="about-task">
                     	<p class="task-desc"><%= i.desc %></p>
                     	<p class="task-date"><i class="far fa-calendar-alt"></i> <%= i.date %></p>
                     </div>
                     <div class="task-category">
-                    	<div><p><%= i.cate %></p></div>
+                    	<div class="cate-color"><p class="cate-value"><%= i.cate %></p></div>
                     </div>
                 </li>
                 <% } %>
