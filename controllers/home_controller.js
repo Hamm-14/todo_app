@@ -22,8 +22,20 @@ module.exports.createTask = function(req,res){
            console.log("Error in creating contact",err);
            return;
        }
-       console.log("******",newTask);
+    //    console.log("******",newTask);
        return res.redirect('back');
    });
 };
+
+module.exports.deleteTask = function(req,res){
+    let id = req.query.id;
+    // console.log("Id from delete Task",id);
+    Task.findByIdAndDelete(id,function(err){
+        if(err){
+            console.log("Error in deleting the data from database",err);
+            return;
+        }
+        return res.redirect('back');
+    });
+}
 

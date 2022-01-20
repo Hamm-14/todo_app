@@ -8,6 +8,8 @@ router.get('/',homeController.home);
 
 router.post('/create-task',homeController.createTask);
 
+router.get('/delete-contact',homeController.deleteTask);
+
 console.log("router Loaded");
 
 module.exports = router;
