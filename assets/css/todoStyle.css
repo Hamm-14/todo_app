@@ -1,13 +1,14 @@
 body{
 	margin: 0;
+	width: 97.95vw;
 }
 
 main{
-	width: 100vw;
+	width: 100%;
 }
 
 header{
-	margin-top: 20px;
+	margin-top: 13px;
 	text-align: center;
 	border-bottom: 1px solid grey;
 }
